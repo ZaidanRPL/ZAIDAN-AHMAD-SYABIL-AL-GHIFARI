@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Perbandingan Dua Variabel</title>
+</head>
+<body>
+
+    <h2>Hasil Perbandingan Dua Variabel</h2>
+    <p id="hasil"></p>
+
+    <script>
+        // Menentukan nilai dua variabel
+        let nilaiA = 15;
+        let nilaiB = 10;
+
+        // Melakukan perbandingan
+        let hasilPerbandingan = nilaiA > nilaiB;
+
+        // Menampilkan hasil ke elemen HTML
+        document.getElementById("hasil").innerHTML = 
+            "Variabel A = " + nilaiA + "<br>" +
+            "Variabel B = " + nilaiB + "<br>" +
+            "Apakah A lebih besar dari B? " + hasilPerbandingan;
+            
+    </script>
+
+</body>
+</html>
