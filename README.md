@@ -1,2 +1,2 @@
 # ZAIDAN-AHMAD-SYABIL-AL-GHIFARI
-First project
+Projek anak sekolahan biasa
