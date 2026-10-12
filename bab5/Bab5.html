@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Layout-Bab5.css">
+</head>
+<body>
+    <section class="demo-section">
+        <h2>Box Model</h2>
+        <div class="kotak-biru">Kotak biru (content-box)</div>
+        <div class="kotak-hijau">Kotak Hijau (border-box)</div>
+        <div class="kotak-bulat">Kotak Bulat (border-radius: 50%)</div>
+    </section>
+
+    <section class="demo-section">
+        <h2>Properti Display</h2>
+        <div class="demo-display">
+            <span class="item-block">display: block</span>
+            <span class="item-inline">display: inline</span>
+            <span class="item-inline">display: inline</span>
+            <span class="item-iblock">display: inline-block</span>
+            <span class="item-iblock">display: inline-block</span>
+        </div>
+    </section>
+    <section class="demo-section">
+        <h2>Flexbox Layout</h2>
+        <h3>Justify Content</h3>
+        <div class="flex-demo flex-space-between">
+            <div class="flex-item">Item 1</div>
+            <div class="flex-item">Item 2</div>
+            <div class="flex-item">Item 3</div>
+        </div>
+        <h3>justify-content: center</h3>
+        <div class="flex-demo flex-column">
+            <div class="flex-item">Atas</div>
+            <div class="flex-item">Tengah</div>
+            <div class="flex-item">Bawah</div>
+        </div>
+    </section>
+
+    <section class="demo-section">
+        <h2>layout: Navbar + Sidebar + Konten + Footer</h2>
+    </section>
+
+    <nav class="navbar-demo">
+        <div class="nav-brand">SMK TJP Tuban</div>
+        <ul class="nav-links">
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#">Tentang</a></li>
+            <li><a href="#">Jurusan</a></li>
+            <li><a href="#">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <div class="layout-demo">
+        <aside class="sidebar-demo">
+            <h3>Sidebar</h3>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">JavaScript</a></li>
+            </ul>
+        </aside>
+        <main class="konten-demo">
+            <h3>Konten Utama</h3>
+            <p>Ini adalah area konten utama. Anda dapat menambahkan teks, gambar, atau elemen lainnya di sini.</p>
+            <div class="kartu-grid"></div>
+                <div class="kartu-item">Kartu 1</div>
+                <div class="kartu-item">Kartu 2</div>
+                <div class="kartu-item">Kartu 3</div>
+            </div>
+        </main>
+    </div>
+    <footer class="footer-demo">
+        <p>&copy; 2024 SMK TJP Tuban &mdash; Semua Hak Dilindungi</p>
+    </footer>
+</body>
+</html>
