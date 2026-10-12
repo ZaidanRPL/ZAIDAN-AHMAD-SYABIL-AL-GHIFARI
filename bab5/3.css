@@ -1,0 +1,28 @@
+.KR{
+    position:relative;
+    top:10px;
+    left:10px;
+}
+.parent {
+position:relative;
+right: 10px;
+background: red;
+color: white;
+border-radius: 50%;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    background: #1A5276;
+    z-index:100;
+}
+
+.SH {
+    position:sticky;
+    top:60px;
+    background: white;
+    z-index: 10;
+}
