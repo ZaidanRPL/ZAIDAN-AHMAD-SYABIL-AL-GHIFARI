@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Tuban | Wisata & Budaya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Tuban<span>Explore™</span></a>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinasi">Destinasi</a></li>
+                <li><a href="#panduan">Panduan</a></li>
+                <li><a href="#peta">Peta Wisata</a></li>
+                <li><a href="#saran">Saran</a></li>
+            </ul>
+
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <p class="subtitle">JAWA TIMUR · INDONESIA</p>
+                <h1>Jelajahi Keindahan<br><span>Kabupaten Tuban</span></h1>
+                <p>
+                    Temukan keindahan wisata bahari, alam,
+                    sejarah, dan budaya yang ada di Kabupaten Tuban.
+                </p>
+                <a href="#destinasi" class="btn">Jelajahi Sekarang →</a>
+            </div>
+        </section>
+
+        <section class="about section" id="tentang">
+            <div class="section-title">
+                <p>KENALI KOTA TUBAN</p>
+                <h2>Satu Daerah, Banyak Cerita.</h2>
+            </div>
+
+            <p class="about-text">
+                Kabupaten Tuban merupakan salah satu wilayah di
+                pesisir utara Jawa Timur yang memiliki berbagai
+                potensi wisata bahari, alam, sejarah, dan budaya.
+                Melalui Explore Tuban, kamu dapat menemukan
+                berbagai destinasi menarik untuk dikunjungi.
+            </p>
+        </section>
+
+        <section class="destinations section" id="destinasi">
+            <div class="section-title">
+                <p>TEMUKAN TEMPAT FAVORITMU</p>
+                <h2>Destinasi Wisata</h2>
+            </div>
+
+            <div class="filters">
+                <button class="filter active" data-filter="semua">Semua</button>
+                <button class="filter" data-filter="bahari">Bahari</button>
+                <button class="filter" data-filter="budaya">Budaya</button>
+                <button class="filter" data-filter="alam">Alam</button>
+            </div>
+
+            <div class="destination-grid">
+
+                <article class="card" data-category="bahari">
+                    <img src="Asset/pantai-boom.jpg" alt="Pantai Boom">
+                    <div class="card-content">
+                        <span class="tag">BAHARI</span>
+                        <h3>Pantai Boom</h3>
+                        <p>
+                            Destinasi wisata pesisir yang berada
+                            di kawasan pusat Kabupaten Tuban.
+                        </p>
+                        <a href="#peta" data-map="Pantai Boom Tuban">Lihat Lokasi →</a>
+                    </div>
+                </article>
+
+                <article class="card" data-category="bahari">
+                    <img src="Asset/pantai-kelapa.jpg" alt="Pantai Kelapa">
+                    <div class="card-content">
+                        <span class="tag">BAHARI</span>
+                        <h3>Pantai Kelapa</h3>
+                        <p>
+                            Wisata pantai dengan suasana rindang
+                            dan pemandangan pesisir.
+                        </p>
+                        <a href="#peta" data-map="Pantai Kelapa Tuban">Lihat Lokasi →</a>
+                    </div>
+                </article>
+
+                <article class="card" data-category="budaya">
+                    <img src="Asset/sunan-bonang.jpg" alt="Makam Sunan Bonang">
+                    <div class="card-content">
+                        <span class="tag">BUDAYA</span>
+                        <h3>Makam Sunan Bonang</h3>
+                        <p>
+                            Salah satu destinasi wisata religi
+                            dan sejarah yang terkenal di Tuban.
+                        </p>
+                        <a href="#peta" data-map="Makam Sunan Bonang Tuban">Lihat Lokasi →</a>
+                    </div>
+                </article>
+
+                <article class="card" data-category="alam">
+                    <img src="Asset/air-terjun-mlirip.jpg" alt="Air Terjun Nglirip">
+                    <div class="card-content">
+                        <span class="tag">ALAM</span>
+                        <h3>Air Terjun Nglirip</h3>
+                        <p>
+                            Wisata alam dengan pemandangan
+                            air terjun dan lingkungan hijau.
+                        </p>
+                        <a href="#peta" data-map="Air Terjun Nglirip Tuban">Lihat Lokasi →</a>
+                    </div>
+                </article>
+
+                <article class="card" data-category="budaya">
+                    <img src="Asset/goa-akbar.jpg" alt="Goa Akbar">
+                    <div class="card-content">
+                        <span class="tag">SEJARAH</span>
+                        <h3>Goa Akbar</h3>
+                        <p>
+                            Destinasi wisata gua yang menjadi
+                            salah satu tempat menarik di Tuban.
+                        </p>
+                        <a href="#peta" data-map="Goa Akbar Tuban">Lihat Lokasi →</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="information section">
+            <div class="section-title">
+                <p>INFORMASI PENGUNJUNG</p>
+                <h2>Informasi Wisata</h2>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Destinasi</th>
+                            <th>Kategori</th>
+                            <th>Estimasi Tiket</th>
+                            <th>Jam Buka</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Pantai Boom</td>
+                            <td>Bahari</td>
+                            <td>4.000.00 - 8.000.00</td>
+                            <td>07.00 - 18.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Pantai Kelapa</td>
+                            <td>Bahari</td>
+                            <td>Bervariatif 
+                                <br>
+                                (tergantung kendaraan)</td>
+                            <td>08.00 - 17.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Makam Sunan Bonang</td>
+                            <td>Budaya</td>
+                            <td>Free</td>
+                            <td>08.00 - 17.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Air Terjun Nglirip</td>
+                            <td>Alam</td>
+                            <td>4.000.00 - 8.000.00</td>
+                            <td>07.00 - 16.30</td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>Goa Akbar</td>
+                            <td>Sejarah</td>
+                            <td>5.000.00 - 8.000.00</td>
+                            <td>07.00 - 18.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="audio-section section" id="panduan">
+            <div class="audio-content">
+                <p class="subtitle">AUDIO GUIDE</p>
+                <h2>Dengarkan Cerita Tuban</h2>
+                <p>
+                    Dengarkan pengantar singkat sebelum
+                    memulai perjalanan wisata kamu.
+                </p>
+
+                <audio controls>
+                    <source src="assets/audio/pengantar-tuban.mp3" type="audio/mpeg">
+                    Browser tidak mendukung audio.
+                </audio>
+
+                <p class="audio-note">
+                    cerita kami di tuban.
+                </p>
+            </div>
+        </section>
+
+        <!-- 1 -->
+        <section class="map-section section" id="peta">
+            <div class="section-title">
+                <p>TEMUKAN ARAH</p>
+                <h2>Pantai Boom Tuban</h2>
+            </div>
+
+            <div class="map-container">
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31687.763254918238!2d112.04503855602286!3d-6.894143158709581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77bd5c7cb30649%3A0xf3e8b5197f28f56d!2sPantai%20Boom!5e0!3m2!1sid!2sid!4v1793586027475!5m2!1sid!2sid" width="600" height="450" style="border: 2px solid #020202;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
+
+            <div class="map-buttons">
+                <button data-place="Pantai Boom Tuban">Pantai Boom</button>
+                <button data-place="Pantai Kelapa Tuban">Pantai Kelapa</button>
+                <button data-place="Makam Sunan Bonang Tuban">Sunan Bonang</button>
+                <button data-place="Air Terjun Nglirip Tuban">Air Terjun Nglirip</button>
+                <button data-place="Goa Akbar Tuban">Goa Akbar</button>
+            </div>
+        </section>
+
+        <!-- 2 -->
+        <section class="map-section section" id="peta">
+            <div class="section-title">
+                <p>TEMUKAN ARAH</p>
+                <h2>Pantai Kelapa Tuban</h2>
+            </div>
+
+            <div class="map-container">
+               <iframe 
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9523391120574!2d112.08663247419253!3d-6.896304367485265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77bdc4b920f3cd%3A0x97bbfe219b26599!2sPantai%20Kelapa%20Tuban!5e0!3m2!1sid!2sid!4v1793586174888!5m2!1sid!2sid" width="600" height="450" style="border: 2px solid #020202;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+               </iframe>
+            </div>
+
+            <div class="map-buttons">
+                <button data-place="Pantai Boom Tuban">Pantai Boom</button>
+                <button data-place="Pantai Kelapa Tuban">Pantai Kelapa</button>
+                <button data-place="Makam Sunan Bonang Tuban">Sunan Bonang</button>
+                <button data-place="Air Terjun Nglirip Tuban">Air Terjun Nglirip</button>
+                <button data-place="Goa Akbar Tuban">Goa Akbar</button>
+            </div>
+        </section>
+
+        <!-- 3 -->
+        <section class="map-section section" id="peta">
+            <div class="section-title">
+                <p>TEMUKAN ARAH</p>
+                <h2>Makam Sunan Bonang Tuban</h2>
+            </div>
+
+            <div class="map-container">
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.965484133256!2d112.06075207419242!3d-6.894732067469135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e77bd59236e67f9%3A0xebd53c7d4261659f!2sWisata%20Religi%20Sunan%20Bonang%20Tuban!5e0!3m2!1sid!2sid!4v1793586382169!5m2!1sid!2sid" width="500" height="350" style="border: 2px solid #020202;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
+
+            <div class="map-buttons">
+                <button data-place="Pantai Boom Tuban">Pantai Boom</button>
+                <button data-place="Pantai Kelapa Tuban">Pantai Kelapa</button>
+                <button data-place="Makam Sunan Bonang Tuban">Sunan Bonang</button>
+                <button data-place="Air Terjun Nglirip Tuban">Air Terjun Nglirip</button>
+                <button data-place="Goa Akbar Tuban">Goa Akbar</button>
+            </div>
+        </section>
+
+        <!-- 4 -->
+        <section class="map-section section" id="peta">
+            <div class="section-title">
+                <p>TEMUKAN ARAH</p>
+                <h2>Air Terjun Nglirip Tuban</h2>
+            </div>
+
+            <div class="map-container">
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.3468685776093!2d111.79141137419357!3d-6.968343168228719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e777446f3cb98e1%3A0xbf18495975f07968!2sAir%20Terjun%20Putri%20Nglirip!5e0!3m2!1sid!2sid!4v1793586543583!5m2!1sid!2sid" width="500" height="350" style="border: 2px solid #020202;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
+
+            <div class="map-buttons">
+                <button data-place="Pantai Boom Tuban">Pantai Boom</button>
+                <button data-place="Pantai Kelapa Tuban">Pantai Kelapa</button>
+                <button data-place="Makam Sunan Bonang Tuban">Sunan Bonang</button>
+                <button data-place="Air Terjun Nglirip Tuban">Air Terjun Nglirip</button>
+                <button data-place="Goa Akbar Tuban">Goa Akbar</button>
+            </div>
+        </section>
+       <-- 5 -->
+        <section class="map-section section" id="peta">
+            <div class="section-title">
+                <p>TEMUKAN ARAH</p>
+                <h2>Goa Akbar</h2>
+            </div>
+
+            <div class="map-container">
+                <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.876749472501!2d112.05782557419268!3d-6.9053388675780525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7797e4b6ff8115%3A0x8c189c686b522ca0!2sGua%20Akbar!5e0!3m2!1sid!2sid!4v1793586621055!5m2!1sid!2sid" width="500" height="350" style="border: 2px solid #020202;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
+
+            <div class="map-buttons">
+                <button data-place="Pantai Boom Tuban">Pantai Boom</button>
+                <button data-place="Pantai Kelapa Tuban">Pantai Kelapa</button>
+                <button data-place="Makam Sunan Bonang Tuban">Sunan Bonang</button>
+                <button data-place="Air Terjun Nglirip Tuban">Air Terjun Nglirip</button>
+                <button data-place="Goa Akbar Tuban">Goa Akbar</button>
+            </div>
+        </section>
+
+        <section class="feedback section" id="saran">
+            <div class="section-title">
+                <p>SUARA PENGUNJUNG</p>
+                <h2>Kirim Saran & Masukan</h2>
+            </div>
+
+            <form id="feedbackForm">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" placeholder="Masukkan nama kamu" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="nama@email.com" required>
+
+                <label for="wisata">Destinasi Wisata</label>
+                <select id="wisata" required>
+                    <option value="">Pilih destinasi</option>
+                    <option>Pantai Boom</option>
+                    <option>Pantai Kelapa</option>
+                    <option>Makam Sunan Bonang</option>
+                    <option>Air Terjun Nglirip</option>
+                    <option>Goa Akbar</option>
+                    <option>Lainnya</option>
+                </select>
+
+                <label for="pesan">Saran dan Masukan</label>
+                <textarea id="pesan" rows="5" placeholder="Tuliskan saran kamu..." required></textarea>
+
+                <button type="submit" class="btn">Kirim Saran →</button>
+                <p id="formStatus" role="status"></p>
+            </form>
+        </section>
+
+    </main>
+
+    
+    <footer>
+        <div class="footer-content">
+            <a href="#" class="logo">Tuban<span>Explore</span></a>
+            <p>Jelajahi pesisir, kenali sejarah, temukan cerita.</p>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Explore Tuban. Project Pembelajaran HTML5 & CSS3.
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

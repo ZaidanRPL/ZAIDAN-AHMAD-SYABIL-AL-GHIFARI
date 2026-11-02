@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contoh Navbar Responsif</title>
+  <!-- Menghubungkan file CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Pustaka Icon (Font Awesome) untuk ikon hamburger -->
+  <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+  <!-- Navigasi Utama -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">BrandLogo</div>
+      
+      <!-- Tombol Hamburger untuk Mobile -->
+      <div class="menu-toggle" id="mobile-menu">
+        <i class="fa fa-bars"></i>
+      </div>
+
+      <!-- Daftar Menu Navigasi -->
+      <ul class="nav-list">
+        <li><a href="#home" class="active">Beranda</a></li>
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#services">Layanan</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- JavaScript Sederhana -->
+  <script>
+    const mobileMenu = document.getElementById('mobile-menu');
+    const navList = document.querySelector('.nav-list');
+
+    mobileMenu.addEventListener('click', () => {
+      navList.classList.toggle('active');
+    });
+  </script>
+
+</body>
+</html>
